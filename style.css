@@ -1,0 +1,109 @@
+/* 基础重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; /* 科技感字体 */
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* 动态视频背景 */
+.bg-video video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* 导航栏 */
+nav {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.7);
+}
+
+.logo {
+    font-size: 24px;
+    color: #00f7ff; /* 霓虹蓝 */
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f7ff;
+    text-shadow: 0 0 8px #00f7ff;
+}
+
+/* 主标题区 */
+.hero {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.hero h1 {
+    font-size: 4em;
+    text-shadow: 0 0 20px #ff003c; /* 霓虹红 */
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* 召唤按钮 */
+.cta-button {
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #ff003c, #00f7ff);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+/* 特色卡片 */
+.features {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 100px 20px;
+}
+
+.feature-card {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border: 2px solid #00f7ff;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #00f7ff;
+    margin-bottom: 15px;
+}
